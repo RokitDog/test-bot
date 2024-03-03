@@ -16,20 +16,58 @@ export function ChatPanel() {
 	}
 
 	return (
-		<div className="mx-auto flex h-[300px] flex-col justify-between rounded-xl bg-slate-800 pb-4 text-white sm:max-w-[375px] sm:px-4 md:max-w-[480px]">
-			<div className="grid h-12 grid-cols-1 pt-4">
+		<div
+			style={{
+				margin: "auto",
+				display: "flex",
+				height: "300px",
+				flexDirection: "column",
+				justifyContent: "space-between",
+				borderRadius: "1rem",
+				backgroundColor: "#2d3748",
+				paddingBottom: "1rem",
+				color: "white",
+				maxWidth: "480px",
+				padding: "20px 20px",
+			}}
+		>
+			<div
+				style={{
+					display: "grid",
+					height: "100%",
+					gridTemplateColumns: "1fr",
+					paddingTop: "16px",
+					overflowY: "auto",
+				}}
+			>
 				{messages.map((message: any, index: any) => (
 					<div
 						key={index}
-						className={`bubble ${
-							message.type === "question" ? "text-left" : "text-right"
-						}`}
+						style={{
+							padding: "12px",
+							borderRadius: "0.5rem",
+							backgroundColor:
+								message.type === "question" ? "#4a5568" : "#2d3748",
+							color: message.type === "question" ? "white" : "white",
+							textAlign: message.type === "question" ? "right" : "left",
+							height: "fit-content",
+						}}
 					>
 						{message.content}
 					</div>
 				))}
 			</div>
-			<div className="space-y-4 border-t bg-slate-700 px-4 py-2 shadow-lg sm:rounded-xl sm:border md:py-4">
+			<div
+				style={{
+					borderTopWidth: "1px",
+					backgroundColor: "#334154",
+					paddingLeft: "16px",
+					paddingRight: "16px",
+					paddingTop: "8px",
+					paddingBottom: "8px",
+					borderRadius: "0.375rem",
+				}}
+			>
 				<PromptForm onNewQuestion={handleNewQuestion} />
 			</div>
 		</div>
