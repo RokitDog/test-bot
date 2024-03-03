@@ -15,27 +15,25 @@
 	width: 100%;
 }
 
-.containerMain > * {
-	::-webkit-scrollbar {
-		width: 10px;
-		height: 10px;
-	}
+.containerMain ::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+}
 
-	/* Track */
-	::-webkit-scrollbar-track {
-		background: #2e3034;
-	}
+/* Track */
+.containerMain ::-webkit-scrollbar-track {
+	background: #2e3034;
+}
 
-	/* Handle */
-	::-webkit-scrollbar-thumb {
-		background: #888;
-		border-radius: 5px;
-	}
+/* Handle */
+.containerMain ::-webkit-scrollbar-thumb {
+	background: #888;
+	border-radius: 5px;
+}
 
-	/* Handle on hover */
+.containerMain /* Handle on hover */
 	::-webkit-scrollbar-thumb:hover {
-		background: #555;
-	}
+	background: #555;
 }
 
 .showChatButton {
