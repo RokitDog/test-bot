@@ -1,16 +1,24 @@
 import { useState } from "react"
 import { ChatPanel } from "./components/chat-panel"
+import { RatingPanel } from "./components/rating-panel"
 
 function App() {
-	const [visible, setVisible] = useState(false)
+	const [visibleChat, setVisibleChat] = useState(false)
+	const [visibleRating, setVisibleRating] = useState(false)
 
 	return (
 		<div className="containerMain">
-			{visible && <ChatPanel />}
+			{visibleChat && <ChatPanel />}
+			{visibleRating && <RatingPanel />}
 			<img
 				src="../public/tobi_ai.png"
 				className="showChatButton"
-				onClick={() => setVisible(!visible)}
+				onClick={() => setVisibleChat(!visibleChat)}
+			/>
+			<img
+				src="../public/tobi_ai.png"
+				className="showChatButton"
+				onClick={() => setVisibleRating(!visibleRating)}
 			/>
 		</div>
 	)
