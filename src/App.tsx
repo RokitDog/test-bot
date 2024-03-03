@@ -6,7 +6,7 @@ function App() {
 	const [visible, setVisible] = useState(false)
 
 	return (
-		<div className="absolute bottom-12 right-12 flex flex-col items-end gap-3.5">
+		<div className="fixed bottom-12 right-12 flex flex-col items-end gap-3.5">
 			{visible && <ChatPanel />}
 			<Button
 				onClick={() => {
