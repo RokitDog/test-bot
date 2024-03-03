@@ -3,7 +3,7 @@ export function IconArrowElbow() {
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
 			viewBox="0 0 256 256"
-			fill="currentColor"
+			fill="white"
 			style={{
 				width: "16px",
 				height: "16px",
