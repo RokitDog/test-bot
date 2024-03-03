@@ -15,6 +15,9 @@ export default defineConfig({
 			input: {
 				app: "./src/main.tsx",
 			},
+			output: {
+				manualChunks: undefined,
+			},
 		},
 		cssCodeSplit: false,
 	},
