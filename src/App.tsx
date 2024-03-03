@@ -7,14 +7,11 @@ function App() {
 	return (
 		<div className="containerMain">
 			{visible && <ChatPanel />}
-			<button
-				onClick={() => {
-					setVisible(!visible)
-				}}
+			<img
+				src="../public/tobi_ai.png"
 				className="showChatButton"
-			>
-				Click Me
-			</button>
+				onClick={() => setVisible(!visible)}
+			/>
 		</div>
 	)
 }

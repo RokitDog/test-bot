@@ -35,6 +35,7 @@ export function PromptForm({ onNewQuestion }: any) {
 					placeholder="Send a message."
 					spellCheck={false}
 					className="text-input"
+					maxRows={3}
 				/>
 				<div>
 					<button type="submit" className="sendButton">
