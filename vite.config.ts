@@ -18,7 +18,7 @@ export default defineConfig({
 				manualChunks: undefined,
 			},
 		},
-		cssCodeSplit: false,
+		// cssCodeSplit: false,
 	},
 	base: "https://cdn.jsdelivr.net/gh/RokitDog/test-bot/dist/assets",
 })
