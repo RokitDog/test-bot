@@ -20,5 +20,5 @@ export default defineConfig({
 		},
 		// cssCodeSplit: false,
 	},
-	base: "https://cdn.jsdelivr.net/gh/aleksandar-stojkoski/rps-ai-widget/dist/assets",
+	base: "https://cdn.jsdelivr.net/gh/RokitDog/test-bot/dist/assets",
 })
