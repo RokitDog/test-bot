@@ -1,9 +1,9 @@
-import { ChatPanel } from "./components/chat-panel"
+// import { ChatPanel } from "./components/chat-panel"
 
 function App() {
 	return (
 		<>
-			<ChatPanel />
+			<h1 className="text-3xl">TESTING</h1>
 		</>
 	)
 }
